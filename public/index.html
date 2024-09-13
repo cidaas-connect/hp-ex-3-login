@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="icon" id="appFavicon" href="https://cdn.cidaas.de/images/logo-single.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body class="mat-typography">
+    <div id="background"></div>
+    <div class="mat-app-background">
+        <div class="container mat-elevation-z8">
+            <h1 class="mat-h1">Welcome</h1>
+            <p>Welcome text</p>
+            <div id="error-message" class="hidden mat-error"></div>
+            <div id="login-options" class="login-options">
+                <button id="email-btn" class="mat-button">Email</button>
+                <button id="mobile-btn" class="mat-button">Mobile</button>
+                <button id="username-btn" class="mat-button">Username</button>
+            </div>
+            <div id="input-container" class="hidden input-container">
+                <input type="text" id="login-input" class="mat-input-element" placeholder="">
+                <button id="next-btn" class="mat-raised-button mat-primary">Next</button>
+            </div>
+            <div id="password-container" class="hidden input-container">
+                <p id="selected-option" class="selected-option"></p>
+                <input type="password" id="password-input" class="mat-input-element" placeholder="Password">
+                <div class="button-container">
+                    <button id="forgot-password-btn" class="mat-button">Forgot Password</button>
+                    <button id="login-btn" class="mat-raised-button mat-primary">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="javascripts/index.js"></script>
+</body>
+</html>
